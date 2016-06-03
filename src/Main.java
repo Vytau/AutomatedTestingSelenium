@@ -13,6 +13,7 @@ public class Main {
     public static void main(String[] args) {
         Main m = new Main();
         long startTime = System.currentTimeMillis();
+        //m.test();
         m.test2();
         long stopTime = System.currentTimeMillis();
         long elapsedTime = stopTime - startTime;
@@ -42,7 +43,7 @@ public class Main {
         Selenium selenium;
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(PhantomJSDriverService.PHANTOMJS_EXECUTABLE_PATH_PROPERTY,
-                "C:\\Users\\Vytautas\\Desktop\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
+                ".\\phantomjs-2.1.1-windows\\bin\\phantomjs.exe");
         WebDriver webDriver = new PhantomJSDriver(caps);
 
         String baseUrl = "http://newtours.demoaut.com/";
